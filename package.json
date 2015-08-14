@@ -1,0 +1,27 @@
+{
+  "name": "Foundation",
+  "version": "1.0.0",
+  "description": "A web app using Angular that encrypts and decrypts information",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/TylerReid/Foundation.git"
+  },
+  "keywords": [
+    "Encryption",
+    "Angular"
+  ],
+  "author": "Tyler Reid & Sam Reaves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerReid/Foundation/issues"
+  },
+  "homepage": "https://github.com/TylerReid/Foundation",
+  "dependencies": {
+    "http-server": "^0.8.0"
+  }
+}
