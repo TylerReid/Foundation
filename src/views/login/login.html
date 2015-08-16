@@ -1,15 +1,33 @@
+<!--
+
+Login Partial for Foundation
+Written by Tyler Reid & Sam Reaves
+August 15th, 2015
+
+-->
+
 <div class="text-center">
+	
+	<!-- Import Google Sign In Code in a non-Angular fashion -->
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<meta name="google-signin-client_id" 
 		content="705082221516-m9p7f5cthrk6pqtsmqkeojvktuifp03v.apps.googleusercontent.com">
-	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+	<!-- Google Sign In Button: Hidden when user authenticated -->
+	<div ng-hide="authenticated" class="sign-in-wrapper">
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	</div>
 	<br/>
-	<button ng-click="signOut()" class="btn btn-primary">
+
+	<!-- Sign Out Button: Hidden when user not yet authenticated -->
+	<button ng-show="authenticated" ng-click="signOut()" class="btn btn-primary">
 		Sign out
 	</button>
+
 	<br/>
-	<div>
+
+	<!-- Shows which username and email user authenticated with when authenticated --> 
+	<div ng-show="authenticated">
 		You are signed in as: {{userName}} {{email}}	
 	</div>
-	
 </div>
