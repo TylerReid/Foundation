@@ -1,0 +1,15 @@
+<div class="text-center">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" 
+		content="705082221516-m9p7f5cthrk6pqtsmqkeojvktuifp03v.apps.googleusercontent.com">
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	<br/>
+	<button ng-click="signOut()" class="btn btn-primary">
+		Sign out
+	</button>
+	<br/>
+	<div>
+		You are signed in as: {{userName}} {{email}}	
+	</div>
+	
+</div>

@@ -3,7 +3,8 @@
 // Declare app level module which depends on views, and components
 angular.module('foundation', [
   'ngRoute',
-  'foundation.test'
+  'foundation.test',
+  'foundation.login'
 ])
 
 // Configure the route provider to redirect any non-existing route to root
