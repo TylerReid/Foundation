@@ -1,2 +1,25 @@
-/* Put your css in here */
+/*  
 
+Styles for Foundation
+Written by Tyler Reid & Sam Reaves
+August 16th, 2015
+
+*/
+
+
+/* Basic browser resets. There are a TON more but this is good for now. */
+body {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* Wrapper for Google's behemoth of a Sign In Button */
+.sign-in-wrapper {
+	
+	/* Temporary width. The Google Sign In button is unnecessarily massive. */
+	width: 120px;
+
+	/* Shift button down 6 rems and center on page */
+	margin: 6rem auto 0 auto;
+}
