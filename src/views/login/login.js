@@ -20,7 +20,7 @@ angular.module('foundation.login', [])
 	}])
 
 	// Set up Login controller
-	.controller('LoginCtrl', function($scope) {
+	.controller('LoginCtrl', ["$window", "$scope", function($window, $scope) {
 		
 		// Initialize user profile variables we'll need later
 		var user_profile = {};
@@ -44,7 +44,7 @@ angular.module('foundation.login', [])
 		};
 
 		// Bind onSignIn method to browser's window object so that Google code may trigger it 
-		window.onSignIn = $scope.onSignIn;
+		$window.onSignIn = $scope.onSignIn;
 		
 		// Sign out method - triggered when user clicks sign out button
 		$scope.signOut = function() {
@@ -67,4 +67,4 @@ angular.module('foundation.login', [])
 				$scope.$digest();
 			});
 		}
-	});
+	}]);
