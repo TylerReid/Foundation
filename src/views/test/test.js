@@ -27,7 +27,7 @@ angular.module('foundation.test', [])
     var hash = hashPassword($scope.password);
 
     // Encrypt data with the default method
-    $scope.encryptedResult = sjcl.encrypt(hash, dataToEncrypt);
+    $scope.encryptedResult = sjcl.encrypt(hash, dataToEncrypt, {mode:"gcm", ks:256});
   };
   
   // Decrypt data passed
