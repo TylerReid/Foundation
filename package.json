@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
+    "lint": "jshint src/",
     "start": "http-server -a localhost -p 8000",
     "test": "test"
   },
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/TylerReid/Foundation",
   "dependencies": {
     "angular-route": "^1.4.4",
-    "http-server": "^0.8.0"
+    "http-server": "^0.8.0",
+    "jshint": "^2.8.0"
   }
 }
